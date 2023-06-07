@@ -222,8 +222,8 @@ data['text'] = data['text'].astype(str)
 <img width="895" alt="nb_12" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/02551ff9-39a6-41ec-9b4e-a71bec846bbb">
 
 **4. Extract links from tweets in a separate column and remove links from tweet content**
-     
-     <img width="892" alt="nb_15" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/14be12df-5086-45c0-9fc8-78bd94b68863">
+  
+   <img width="892" alt="nb_15" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/61fe09b9-838a-4e30-9aca-094fa175d072">
 <img width="890" alt="nb_16" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/bc5bb0d3-00aa-4386-98f4-25fd5566b992">
 <img width="903" alt="nb_17" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/019412d5-33e1-4940-8a05-615e13266539">
 
