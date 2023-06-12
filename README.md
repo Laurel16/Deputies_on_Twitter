@@ -428,10 +428,12 @@ Bi-grams and tri-grams
 
 
 
-<img width="1012" alt="nb_24" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/01bda1e3-ba4b-4b60-9616-09908a3992d2">
-<img width="1011" alt="nb_25" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/8ea9fe2b-0550-4ac5-ae7b-a0a1fda527d7">
-<img width="913" alt="nb_26" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/80c0f0a5-e793-479a-8212-dbe1179aead3">
-<img width="1013" alt="nb_27" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/9003d426-f47d-4762-90c8-732c0aad0ead">
+<img width="1050" alt="1" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/385af8de-439b-4a3c-854a-7da876a665a4">
+  <img width="984" alt="3" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/0ebd2e8b-ddc9-4d2a-b495-8e4f29324360">
+<img width="1023" alt="4" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/c608148a-fc5c-44e1-a9e1-74596a805c91">
+  
+<img width="929" alt="5" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/36bbfdd8-eb75-49c8-aefd-c33b7453274f">
+
 
   
 </details>
