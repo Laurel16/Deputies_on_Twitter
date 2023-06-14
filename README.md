@@ -20,24 +20,24 @@ To compound matters, discrepancies in the spellings of names or the reversal of 
 1. **Creation of a common column** 
   
   
-  <img width="1053" alt="nb_1" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/422c6a8f-5327-466f-a8ca-924f74a6f190">
-
   
+
+  <img width="1053" alt="nb_1" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/415e5eda-e84e-4a00-bae3-516245ecf0dd">
+
 2. **Examination of the correspondences between these columns:**
 
-  
-  <img width="1037" alt="nb_2" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/b618838c-6780-4a99-bff2-0089f9824321">
+  <img width="1037" alt="nb_2" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/33d8c28e-934e-4b81-9e3d-420c7a35f8cb">
 
   
 **3. Using fuzzymatcher (https://pypi.org/project/fuzzymatcher/) to reconcile columns that are almost but not quite identical.**
+<img width="1014" alt="nb_3" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/fd301531-74ee-425f-b231-299da86bb65c">
 
-<img width="1014" alt="nb_3" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/591638e8-c21a-46d3-a643-f5b18cbad5ad">
 
 I am checking the data, and there are about a dozen mismatches. Examining them individually allows me to identify some data that is not up to date in both original files.
 
 Then I correct the dataset, by manually removing the deputies who are no longer in office or addressing the inaccuracies. Finally, I have a dataframe containing 517 active deputies with a Twitter account.
 
-<img width="1038" alt="nb_4" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/b4868997-9eb5-433d-8ff9-40e0694cf20c">
+<img width="1038" alt="nb_4" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/2b0e312c-44dd-4041-a331-19c44073e7bf">
 
   
   
@@ -183,14 +183,11 @@ I set the tweet_per_deputy to 800.
 I changed the content of the `deput_list` by updating it with new screen names each time the program broke.
 
 The output looked like this:
-
-<img width="1053" alt="nb_30" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/72dfd149-133c-4669-9647-f4d0fb6f4214">
+<img width="1053" alt="nb_30" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/77e9df5e-c3d7-4c75-aed6-814b5d324317">
 
   
 And the final result:
-
-
-<img width="933" alt="nb_31" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/1e69ac12-7dca-44e6-8eed-00466482f144">
+<img width="933" alt="nb_31" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/248ea223-4064-4b4b-a632-5c11460de3fd">
 
 
 
@@ -211,21 +208,19 @@ data['text'] = data['text'].astype(str)
 ```
  **2. Picking emoji in a separate column (and removing them from the array they were in).**
     
-  
-<img width="893" alt="nb_8" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/17d529dd-ca49-40dd-a1f9-56e340fd57e7">
+  <img width="893" alt="nb_8" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/7d2a8189-5fee-4945-9728-2972fc4500e2">
+<img width="902" alt="nb_9" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/1d86640a-ea78-4ec2-85d1-25de55063475">
 
-<img width="902" alt="nb_9" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/c1053229-8444-4342-8021-730aae78dcac">
 
  **3. Creating a column that indicates whether a tweet is a retweet or not (a categorical boolean column: true or false, and then 0 or 1).**
-     
-  <img width="895" alt="nb_11" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/84f892d5-a17e-4d75-86cc-280914df62b7">
-<img width="895" alt="nb_12" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/02551ff9-39a6-41ec-9b4e-a71bec846bbb">
+     <img width="895" alt="nb_11" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/81cfefb6-a721-4aa1-b015-a8ab98619cec">
+<img width="895" alt="nb_12" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/67e19b7c-8b2f-45bd-bd67-9fc5b2ab536f">
 
-**4. Extract links from tweets in a separate column and remove links from tweet content**
   
-   <img width="892" alt="nb_15" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/61fe09b9-838a-4e30-9aca-094fa175d072">
-<img width="890" alt="nb_16" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/bc5bb0d3-00aa-4386-98f4-25fd5566b992">
-<img width="903" alt="nb_17" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/019412d5-33e1-4940-8a05-615e13266539">
+**4. Extract links from tweets in a separate column and remove links from tweet content**
+  <img width="892" alt="nb_15" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/bc218bd5-4c50-4892-a84c-fe26f1b7d8b6">
+<img width="890" alt="nb_16" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/e225aab3-d60e-4c0b-be92-c20336472afc">
+<img width="903" alt="nb_17" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/66597da1-2b12-48b6-8e75-260a2632cf45">
 
  
 **5.clean and tokenize tweet content**
@@ -335,9 +330,8 @@ def tokenize_tweets(df):
  ```
   
 Then apply the function:
-  
-<img width="1011" alt="nb_34" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/a1790a89-fed7-4fb6-b0be-a4ec788afa43">
-<img width="924" alt="nb_40" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/1dfdb35e-ea5f-431f-8ecd-8cca49bfeabd">
+  <img width="1011" alt="nb_34" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/94ac3514-fe86-4acb-80f2-dc912ad4cb7c">
+<img width="924" alt="nb_40" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/c5b74cb3-cd6d-43b0-a610-35de6c1ccab3">
 
   
 Depending on the process, it could be necessary to convert the list to a string after using some function (avoiding error "TypeError: expected string or bytes-like object"):
@@ -362,28 +356,24 @@ print(sorted(stop_words))
   
 To identify the most frequent words to be removed in order to minimize the noise:
 
-
-   <img width="1065" alt="nb_46" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/04c6d3e9-a82d-47c9-bcc5-0b62783769e7">
-
+<img width="1065" alt="nb_46" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/73c3f9f9-7322-4a1d-9783-fabc6224038d">
 
   
 **5. Get the citation of other tweetos in a new column**
-<img width="1042" alt="nb_45" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/e13ee189-77ba-4718-9915-92fb4d0a741d">
 
+<img width="1042" alt="nb_45" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/8a323377-9438-4e49-a0a0-3084540971ec">
 
 
 **6 Add a code column for groups**
   
-     
-<img width="895" alt="nb_14" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/1490ef94-27b2-493a-9612-53670b9156eb">
-
-
     
-   <img width="908" alt="nb_7" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/12b600e7-c779-48fe-a1aa-bbfac29819cd">
+<img width="895" alt="nb_14" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/db5c04a9-e210-4d5e-b4cc-a2353d4ba8ab">
 
+<img width="908" alt="nb_7" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/b5a0cfbe-ab3a-49b4-adcf-3b4de0ce675a">
+
+   
 **7. Convert datetime to date and add a year column**
-  
-<img width="910" alt="nb_38" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/48d795ad-0bbc-446a-9e56-8e718d6ae61e">
+  <img width="910" alt="nb_38" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/76dea9f0-b934-4422-8a69-f854af06da3a">
 
 
 </details>
@@ -392,40 +382,34 @@ To identify the most frequent words to be removed in order to minimize the noise
   <summary><b><h2> Step 4 - Data Explorations </h2></b></summary>
   
 **1. How are distributed tweets over time ?**
-
-<img width="898" alt="nb_41" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/0172c5be-67b7-4d20-afb6-0992c5c5d6d2">
+<img width="898" alt="nb_41" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/714930e0-b880-43f6-ba32-ffed276c73d3">
 
 **2. Who are the 20 most followed deputies?**
     
-
-<img width="1006" alt="nb_5" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/7c622c48-2b03-47d8-a6ef-683e00414d16">
-
+<img width="1006" alt="nb_5" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/8ea0286e-7eee-4621-aa6e-8073da559baf">
  
  The top two, far ahead, are the leaders of the far-right and far-left parties.
     
-    
-<img width="824" alt="nb_6" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/5b0f43f5-9d36-4436-af59-fbabcf17b461">
+    <img width="824" alt="nb_6" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/5416f375-99f9-40ac-a2d5-c23ea18f532f">
 
 
     
 **3. Which group retweet the most ?**
      
-<img width="899" alt="nb_13" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/7f28365c-6811-47e6-bfaf-f5e6b8e93f5a">
 
+<img width="899" alt="nb_13" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/2e60cd47-e575-4eda-91d0-3f176a1b504d">
 
 **4. What are the main topics per group**
 
 Bi-grams and tri-grams
 
   If not done before:
-  
-  <img width="900" alt="nb_20" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/ee11825f-6b6c-4598-a008-a07ecee643f0">
-  
-  <img width="850" alt="nb_21" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/86786cc3-05df-44e8-a03a-82aef452f139">
-<img width="863" alt="nb_22" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/796b5489-3702-4d50-8fb8-9fd68c3d7540">
-<img width="860" alt="nb_23" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/8777455c-28e7-4fb7-a8ec-7a9079e3fa42">
+  <img width="900" alt="nb_20" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/62469e6a-b831-4682-a970-2b53e3ac465a">
+<img width="850" alt="nb_21" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/16d40d18-6525-4408-889f-9b79cb33b2d1">
+<img width="863" alt="nb_22" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/d30b9c6e-c496-4d62-938f-b0e25b226007">
+<img width="860" alt="nb_23" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/0b032023-b1be-4d9d-9eb8-7330fd730f5e">
 
-
+  
 
 
 <img width="1050" alt="1" src="https://github.com/Laurel16/Deputies_on_Twitter/assets/16537140/385af8de-439b-4a3c-854a-7da876a665a4">
